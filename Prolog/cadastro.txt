@@ -1,0 +1,1 @@
+automovel('VVG53NIL9AJ','13748','Suki,Weiss','Chevrolet','Maruti_Suzuki','2019','P.O.Box880', '3191VestibulumRd.','4703','Loremipsumdolorsitamet', 'consectetuer adipiscing','Ipatinga','Minas Gerais','39985062','1-413-672-3498').

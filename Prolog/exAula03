@@ -1,0 +1,10 @@
+animal(onca).
+animal(papagaio).
+animal(macaco).
+animal(cachorro).
+animal(gato).
+animal(X).
+gosta(ana,animal):-
+    gosta(ana,X).
+
+

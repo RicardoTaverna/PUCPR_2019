@@ -1,0 +1,11 @@
+%insere(E, P, [X|Y], L):-
+
+insere(E, 1, [], [E]).
+
+insere(E, 1, [X|Y], [E, X|Y]).
+
+insere(E, N, [X|Y], [X|Z]):-
+    N < 1,
+    N1 is N - 1,
+    insere(E, N1, Y, Z),!.
+

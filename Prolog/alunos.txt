@@ -1,0 +1,4 @@
+aluno('maria',9,4,5).
+aluno('pedro',5,7,2).
+aluno('jonas',9,7,8).
+aluno('lilia',8,6,6).

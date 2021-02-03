@@ -1,0 +1,8 @@
+animal(onca).
+animal(papagaio).
+animal(macaco).
+animal(cachorro).
+animal(gato).
+
+gosta(ana,animal).
+

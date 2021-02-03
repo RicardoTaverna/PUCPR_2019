@@ -1,0 +1,127 @@
+
+menu:-
+    write('**************************.\n'),
+    write('*      Calculadora       *.\n'),
+    write('**************************.\n'),
+    write('.\n'),
+    write('.\n'),
+    write('.\n'),
+    write('Escolha qual das opções abaixo.\n'),
+    write('1-Soma.\n'),
+    write('2-Subtração.\n'),
+    write('3-Multiplicação.\n'),
+    write('4-Divisão.\n'),
+    write('5-Sair.\n'),
+    write('.\n'),
+    write('.\n'),
+    writeln('Informe a opção: '),
+    read(E),
+    opcoes(E),
+    menu. % se 5 ,!,Fail. caso sem erros, direto Fail.
+
+opcoes(1):-
+    write('.\n'),
+    write('.\n'),
+    writeln('---  SOMA ( A + B )  ---'),
+    write('.\n'),
+    write('.\n'),
+    write('A: '),
+    read(X),
+    write('.\n'),
+    write('B: '),
+    read(Y),
+    write('.\n'),
+    write('.\n'),
+    R is X + Y,
+    write(X),
+    write('+'),
+    write(Y),
+    write('='),
+    write(R),
+    write('.\n'),
+    write('.\n'),!.
+    % ,!. não deixa dar backtracking
+
+opcoes(2):-
+    write('.\n'),
+    write('.\n'),
+    writeln('---  SUBTRAÇÃO ( A - B )  ---'),
+    write('.\n'),
+    write('.\n'),
+    write('A: '),
+    read(X),
+    write('.\n'),
+    write('B: '),
+    read(Y),
+    write('.\n'),
+    write('.\n'),
+    R is X - Y,
+    write(X),
+    write('-'),
+    write(Y),
+    write('='),
+    write(R),
+    write('.\n'),
+    write('.\n'),!.
+
+opcoes(3):-
+    write('.\n'),
+    write('.\n'),
+    writeln('---  PRODUTO ( A * B )  ---'),
+    write('.\n'),
+    write('.\n'),
+    write('A: '),
+    read(X),
+    write('.\n'),
+    write('B: '),
+    read(Y),
+    write('.\n'),
+    write('.\n'),
+    R is X * Y,
+    write(X),
+    write('*'),
+    write(Y),
+    write('='),
+    write(R),
+    write('.\n'),
+    write('.\n'),!.
+
+
+opcoes(4):-
+    write('.\n'),
+    write('.\n'),
+    writeln('---  DIVISÃO ( A / B )  ---'),
+    write('.\n'),
+    write('.\n'),
+    write('A: '),
+    read(X),
+    write('.\n'),
+    write('B: '),
+    read(Y),
+    y =\= 0,
+    write('.\n'),
+    write('.\n'),
+    R is X / Y,
+    write(X),
+    write('/'),
+    write(Y),
+    write('='),
+    write(R),
+    write('.\n'),
+    write('.\n'),!.
+
+opcoes(4):-
+    write('Impossivel dividir por zero').
+
+opcoes(5):-
+    writeln('Saindo ... '),
+    write('.\n'),
+    write('.\n'),fail.
+
+opcoes(X):-
+    X >= 6,
+    writeln('opção invalida'),
+    write('/'),
+    write('/'),
+    menu.
+
